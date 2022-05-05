@@ -6,6 +6,8 @@ After=syslog.target network.target
 User=root
 Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/jupyterhub/bin"
 ExecStart=/usr/local/bin/jupyterhub -f /home/shiny-server/services/service_jupyterhub/jupyterhub_config.py
+Restart=on-failure
+RestartSec=60s
 
 [Install]
 WantedBy=multi-user.target
