@@ -1,1 +1,4 @@
-secrets/
+*
+!README.md
+!jupyterhub.service
+!jupyterhub_config.py
