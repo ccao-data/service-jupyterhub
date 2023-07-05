@@ -4,7 +4,7 @@ After=syslog.target network.target
 
 [Service]
 User=root
-WorkingDirectory=/home/shiny-server/services/service_jupyterhub
+WorkingDirectory=/home/shiny-server/services/service-jupyterhub
 Environment="PATH=/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/opt/jupyterhub/bin"
 ExecStart=jupyterhub -f jupyterhub_config.py
 Restart=on-failure
